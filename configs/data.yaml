@@ -1,0 +1,24 @@
+# This is the single source of truth for dataset order and reproducible splits.
+dataset: quickdraw_numpy_bitmap
+source_base_url: https://storage.googleapis.com/quickdraw_dataset/full/numpy_bitmap
+categories:
+  - cat
+  - dog
+  - bicycle
+  - car
+  - airplane
+  - banana
+  - apple
+  - clock
+  - house
+  - tree
+seed: 42
+samples_per_class: 10000
+split_counts_per_class:
+  train: 8000
+  val: 1000
+  test: 1000
+image_shape: [28, 28]
+storage_dtype: uint8
+raw_dir: data/raw
+processed_dir: data/processed

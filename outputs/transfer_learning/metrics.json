@@ -1,0 +1,67 @@
+{
+  "model": "FrozenMobileNetV3Small",
+  "pretrained": true,
+  "device": "mps",
+  "class_order": [
+    "cat",
+    "dog",
+    "bicycle",
+    "car",
+    "airplane",
+    "banana",
+    "apple",
+    "clock",
+    "house",
+    "tree"
+  ],
+  "input": "grayscale 28x28 -> repeated RGB -> resized 224x224 -> ImageNet normalization",
+  "checkpoint_selection": "highest validation accuracy",
+  "epochs": 5,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "total_parameters": 932778,
+  "trainable_parameters": 5770,
+  "training_seconds": 642.916451750003,
+  "best_epoch": 5,
+  "best_validation_accuracy": 0.9216,
+  "test_loss": 0.27339470229148866,
+  "test_accuracy": 0.9166,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5499233456373215,
+      "validation_loss": 0.3378460293292999,
+      "validation_accuracy": 0.9038
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.3634716058731079,
+      "validation_loss": 0.2950108363389969,
+      "validation_accuracy": 0.913
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.342786644244194,
+      "validation_loss": 0.27637811856269834,
+      "validation_accuracy": 0.9177
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3318657887279987,
+      "validation_loss": 0.2706418688058853,
+      "validation_accuracy": 0.9189
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.3264283690959215,
+      "validation_loss": 0.25873477940559386,
+      "validation_accuracy": 0.9216
+    }
+  ],
+  "checkpoint": "outputs/transfer_learning/mobilenet_v3_small_head.pt",
+  "test_set_policy": "Checkpoint selected using validation accuracy only. The selected checkpoint was scored on the held-out test split; accuracy was recorded after training and macro-F1 was added in a metrics-only pass. No model or hyperparameter decisions used test results.",
+  "test_macro_f1": 0.9165226683562089,
+  "single_drawing_inference_latency_ms": 4.109605000121519,
+  "checkpoint_bytes": 3869687,
+  "single_drawing_inference_timing_note": "50 repeated single-drawing forward passes on validation data after 5 warmups, including RGB replication, resize, and ImageNet normalization; measured on Apple MPS."
+}

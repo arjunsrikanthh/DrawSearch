@@ -1,0 +1,316 @@
+{
+  "created_at_utc": "2026-10-13T16:40:22Z",
+  "dataset_manifest_sha256": "e04ffe06f4dc1d27a22e9fbccc2affed8a2b30f45921efd260f2d1a44ed310c6",
+  "model": "LinearSVC",
+  "input": "flattened 784 pixels, normalized to [0, 1]",
+  "class_order": [
+    "cat",
+    "dog",
+    "bicycle",
+    "car",
+    "airplane",
+    "banana",
+    "apple",
+    "clock",
+    "house",
+    "tree"
+  ],
+  "selection_policy": "C was chosen by validation accuracy, with validation macro-F1 and then smaller C as tie-breakers; the test split was evaluated only after selection.",
+  "settings": {
+    "candidate_C_values": [
+      0.01,
+      0.1
+    ],
+    "max_iter": 5000,
+    "dual": false,
+    "random_state": 42
+  },
+  "candidates": [
+    {
+      "C": 0.01,
+      "training_seconds": 102.04878520799684,
+      "convergence_warnings": [],
+      "validation": {
+        "accuracy": 0.7741,
+        "macro_f1": 0.7700925244011148,
+        "per_class": {
+          "cat": {
+            "precision": 0.7084708470847084,
+            "recall": 0.644,
+            "f1": 0.6746987951807228,
+            "support": 1000
+          },
+          "dog": {
+            "precision": 0.5761316872427984,
+            "recall": 0.42,
+            "f1": 0.48582995951417,
+            "support": 1000
+          },
+          "bicycle": {
+            "precision": 0.775623268698061,
+            "recall": 0.84,
+            "f1": 0.8065290446471436,
+            "support": 1000
+          },
+          "car": {
+            "precision": 0.7373447946513849,
+            "recall": 0.772,
+            "f1": 0.7542745481191988,
+            "support": 1000
+          },
+          "airplane": {
+            "precision": 0.6257668711656442,
+            "recall": 0.714,
+            "f1": 0.6669780476412891,
+            "support": 1000
+          },
+          "banana": {
+            "precision": 0.7929389312977099,
+            "recall": 0.831,
+            "f1": 0.8115234375,
+            "support": 1000
+          },
+          "apple": {
+            "precision": 0.9038854805725971,
+            "recall": 0.884,
+            "f1": 0.8938321536905965,
+            "support": 1000
+          },
+          "clock": {
+            "precision": 0.8829891838741396,
+            "recall": 0.898,
+            "f1": 0.8904313336638572,
+            "support": 1000
+          },
+          "house": {
+            "precision": 0.8583162217659137,
+            "recall": 0.836,
+            "f1": 0.8470111448834853,
+            "support": 1000
+          },
+          "tree": {
+            "precision": 0.839851024208566,
+            "recall": 0.902,
+            "f1": 0.8698167791706847,
+            "support": 1000
+          }
+        }
+      }
+    },
+    {
+      "C": 0.1,
+      "training_seconds": 147.62241504099802,
+      "convergence_warnings": [],
+      "validation": {
+        "accuracy": 0.7749,
+        "macro_f1": 0.7709493725789198,
+        "per_class": {
+          "cat": {
+            "precision": 0.7026143790849673,
+            "recall": 0.645,
+            "f1": 0.6725755995828988,
+            "support": 1000
+          },
+          "dog": {
+            "precision": 0.5816186556927297,
+            "recall": 0.424,
+            "f1": 0.49045691150954307,
+            "support": 1000
+          },
+          "bicycle": {
+            "precision": 0.7812789620018535,
+            "recall": 0.843,
+            "f1": 0.810966810966811,
+            "support": 1000
+          },
+          "car": {
+            "precision": 0.7456647398843931,
+            "recall": 0.774,
+            "f1": 0.7595682041216879,
+            "support": 1000
+          },
+          "airplane": {
+            "precision": 0.6275197195442594,
+            "recall": 0.716,
+            "f1": 0.6688463334890238,
+            "support": 1000
+          },
+          "banana": {
+            "precision": 0.7889733840304183,
+            "recall": 0.83,
+            "f1": 0.8089668615984406,
+            "support": 1000
+          },
+          "apple": {
+            "precision": 0.9021406727828746,
+            "recall": 0.885,
+            "f1": 0.8934881373043917,
+            "support": 1000
+          },
+          "clock": {
+            "precision": 0.8833333333333333,
+            "recall": 0.901,
+            "f1": 0.8920792079207921,
+            "support": 1000
+          },
+          "house": {
+            "precision": 0.8581706063720452,
+            "recall": 0.835,
+            "f1": 0.8464267612772428,
+            "support": 1000
+          },
+          "tree": {
+            "precision": 0.8381665107577175,
+            "recall": 0.896,
+            "f1": 0.8661188980183664,
+            "support": 1000
+          }
+        }
+      }
+    }
+  ],
+  "selected_C": 0.1,
+  "selected_model": {
+    "refit_training_seconds": 100.41292958401027,
+    "convergence_warnings": [],
+    "checkpoint": "outputs/models/linear_svm.joblib",
+    "checkpoint_bytes": 63587,
+    "parameter_count": 7850,
+    "validation": {
+      "accuracy": 0.7749,
+      "macro_f1": 0.7709493725789198,
+      "per_class": {
+        "cat": {
+          "precision": 0.7026143790849673,
+          "recall": 0.645,
+          "f1": 0.6725755995828988,
+          "support": 1000
+        },
+        "dog": {
+          "precision": 0.5816186556927297,
+          "recall": 0.424,
+          "f1": 0.49045691150954307,
+          "support": 1000
+        },
+        "bicycle": {
+          "precision": 0.7812789620018535,
+          "recall": 0.843,
+          "f1": 0.810966810966811,
+          "support": 1000
+        },
+        "car": {
+          "precision": 0.7456647398843931,
+          "recall": 0.774,
+          "f1": 0.7595682041216879,
+          "support": 1000
+        },
+        "airplane": {
+          "precision": 0.6275197195442594,
+          "recall": 0.716,
+          "f1": 0.6688463334890238,
+          "support": 1000
+        },
+        "banana": {
+          "precision": 0.7889733840304183,
+          "recall": 0.83,
+          "f1": 0.8089668615984406,
+          "support": 1000
+        },
+        "apple": {
+          "precision": 0.9021406727828746,
+          "recall": 0.885,
+          "f1": 0.8934881373043917,
+          "support": 1000
+        },
+        "clock": {
+          "precision": 0.8833333333333333,
+          "recall": 0.901,
+          "f1": 0.8920792079207921,
+          "support": 1000
+        },
+        "house": {
+          "precision": 0.8581706063720452,
+          "recall": 0.835,
+          "f1": 0.8464267612772428,
+          "support": 1000
+        },
+        "tree": {
+          "precision": 0.8381665107577175,
+          "recall": 0.896,
+          "f1": 0.8661188980183664,
+          "support": 1000
+        }
+      }
+    },
+    "test": {
+      "accuracy": 0.7722,
+      "macro_f1": 0.7676374719295842,
+      "per_class": {
+        "cat": {
+          "precision": 0.6753528773072747,
+          "recall": 0.622,
+          "f1": 0.6475793857365956,
+          "support": 1000
+        },
+        "dog": {
+          "precision": 0.5974212034383954,
+          "recall": 0.417,
+          "f1": 0.4911660777385159,
+          "support": 1000
+        },
+        "bicycle": {
+          "precision": 0.7718181818181818,
+          "recall": 0.849,
+          "f1": 0.8085714285714286,
+          "support": 1000
+        },
+        "car": {
+          "precision": 0.7713736791546589,
+          "recall": 0.803,
+          "f1": 0.7868691817736404,
+          "support": 1000
+        },
+        "airplane": {
+          "precision": 0.6227233304423244,
+          "recall": 0.718,
+          "f1": 0.6669763121226197,
+          "support": 1000
+        },
+        "banana": {
+          "precision": 0.7781007751937985,
+          "recall": 0.803,
+          "f1": 0.7903543307086615,
+          "support": 1000
+        },
+        "apple": {
+          "precision": 0.8906560636182903,
+          "recall": 0.896,
+          "f1": 0.8933200398803589,
+          "support": 1000
+        },
+        "clock": {
+          "precision": 0.8762088974854932,
+          "recall": 0.906,
+          "f1": 0.8908554572271387,
+          "support": 1000
+        },
+        "house": {
+          "precision": 0.8566912539515279,
+          "recall": 0.813,
+          "f1": 0.8342739866598256,
+          "support": 1000
+        },
+        "tree": {
+          "precision": 0.8395872420262664,
+          "recall": 0.895,
+          "f1": 0.8664085188770572,
+          "support": 1000
+        }
+      }
+    }
+  },
+  "limitations": [
+    "This is a linear SVM comparison; no RBF-kernel SVM was run because full-data RBF training is substantially more expensive on 80,000 drawings.",
+    "The test metrics are for this fixed project split and should be compared with paper metrics only after matching split size, categories, and metric type."
+  ]
+}
