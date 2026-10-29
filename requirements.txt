@@ -10,4 +10,3 @@ torch==2.14.1
 torchvision==0.29.1
 gradio==6.30.0
 tzdata==2026.5
-reportlab==4.4.9
