@@ -122,11 +122,15 @@ on arbitrary user drawings.
 | `outputs/metrics/` | Tracked machine-readable baseline, CNN, and SVM results |
 | `outputs/transfer_learning/metrics.json` | Tracked MobileNet experiment results |
 | `outputs/figures/quickdraw_samples.png` | Small visual sample of the selected classes |
+| `reports/DrawSearch_Research_Paper.pdf` | Research-style report with methods, results, limits, and references |
+| `reports/DrawSearch_Course_Writeup.pdf` | Concise course PDF write-up |
+| `reports/build_reports.py` | Source used to regenerate the two report PDFs |
+| `presentation/DrawSearch_Slides_v3.pptx` | Editable project review slides |
 
 Large source and split data, model checkpoints, environment-specific setup
-records, confusion-matrix images, presentations, and PDFs are not tracked.
-The metrics JSON files retain the detailed per-class results and experiment
-settings without needing to include trained weights.
+records, and confusion-matrix images are not tracked. The metrics JSON files
+retain detailed per-class results and experiment settings without needing to
+include trained weights.
 
 ## 6. Setup and running the work
 
@@ -195,7 +199,8 @@ systems or arbitrary installations have been validated.
 The project is intentionally scoped to ten classes and a single local
 classifier. The prepared image split and checkpoints are not delivered in the
 Git repository, so a new user must download data and train a checkpoint to
-reproduce the full demo. No PDF report or slide deck is included here.
+reproduce the full demo. The course write-up, research-style report, and slide
+deck are included as project deliverables.
 
 ## References and data credit
 

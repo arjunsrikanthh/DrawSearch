@@ -42,7 +42,23 @@ commands and weight-download note in [PROJECT_DETAILS.md](PROJECT_DETAILS.md).
   and tree.
 - The user-facing demo loads the small CNN V1 checkpoint after it is trained.
 - RBF SVM and CNN versions 3 and 4 have not been implemented or measured.
-- PDF reports and presentation files are not part of this source repository.
+
+## Course deliverables
+
+- [Research-style project report](reports/DrawSearch_Research_Paper.pdf) covers
+  the dataset, methods, results, limitations, and references.
+- [Course write-up](reports/DrawSearch_Course_Writeup.pdf) is a concise, one-page
+  PDF covering the problem, dataset, approach, implementation, and conclusion.
+- [Presentation slides](presentation/DrawSearch_Slides_v3.pptx) are the current
+  editable deck for the project review.
+- [Report builder](reports/build_reports.py) regenerates both PDFs from the
+  project results. Run `python reports/build_reports.py` from the repository
+  root after installing the project requirements.
+
+The prepared image split and trained checkpoints remain outside Git because of
+their size. A new user must download data and train a checkpoint to reproduce
+the full demo. The report and slides summarize saved experiment results; they
+do not replace the live code demonstration.
 
 Quick, Draw! source drawings are from Google's dataset under CC BY 4.0. See
 the project details for dataset provenance, paper context, and references.
